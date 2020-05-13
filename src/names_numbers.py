@@ -562,8 +562,16 @@ heroes = [
         "name": "arc_warden",
         "id": 113,
         "localized_name": "Arc Warden"
+    },
+    {
+        "name": "unknown",
+        "id": 24,
+        "localized_name": "Unknown"
     }
 ]
+hero_id_dict = {hero['id']: (hero['name'], hero['localized_name'])for hero in heroes}
+hero_name_dict = {hero['name']: hero['id'] for hero in heroes}
+
 
 def get_names(df, heroes=heroes):
     hero_names = [i for i in df.columns[4:]]
@@ -582,3 +590,10 @@ def get_nums(df, heroes=heroes):
                 hero_nums[indx] = hero['id']
     df.columns = list(df.columns[:4]) + list(hero_nums)
     return 
+
+def get_name(str, heroes=hero_id_dict):
+    num = int(str[:-1])
+    return heroes[num]
+        
+
+

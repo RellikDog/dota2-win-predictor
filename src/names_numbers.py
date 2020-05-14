@@ -564,9 +564,9 @@ heroes = [
         "localized_name": "Arc Warden"
     },
     {
-        "name": "unknown",
+        "name": "wraith_king",
         "id": 24,
-        "localized_name": "Unknown"
+        "localized_name": "Wraith King"
     }
 ]
 hero_id_dict = {hero['id']: (hero['name'], hero['localized_name'])for hero in heroes}
@@ -594,6 +594,8 @@ def get_nums(df, heroes=heroes):
 def get_name(str, heroes=hero_id_dict):
     num = int(str[:-1])
     return heroes[num]
-        
+
+def get_id(name, heros=hero_name_dict):
+    return heros[name]        
 
 

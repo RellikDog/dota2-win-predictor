@@ -29,11 +29,24 @@ Here we have the 5 winningest heros and how wining they are:
  ('Skeleton King', 0.5534763948497854)
 
 And here are the ones with the lowest win rate:
-("Nature's Prophet", 0.4164259182831201),
- ('Queen of Pain', 0.41954726215968186),
- ('Windranger', 0.43584605817729566),
- ('Lina', 0.43872113676731794),
- ('Leshrac', 0.44195751138088013)
+('Wisp', 0.3555276381909548),
+ ('Broodmother', 0.3760204081632653),
+ ('Lone Druid', 0.38603174603174606),
+ ('Enchantress', 0.39389638041163944),
+ ("Nature's Prophet", 0.4164259182831201),
+
+ 5 most and least picks:
+ ('mirana', 32048), 
+ ('phantom_assassin', 29802), 
+ ('pudge', 28285), 
+ ('legion_commander', 26521), 
+ ('juggernaut', 23327)
+
+ ('abyssal_underlord', 0), 
+ ('wraith_king', 0), 
+ ('chen', 790), 
+ ('visage', 888), 
+ ('brewmaster', 1558)
  
 <img alt="ratios of wins by picks" src='graphs/ratio-scaled.png'>
 
@@ -41,7 +54,7 @@ And here are the ones with the lowest win rate:
 
 So I've established that there is some difference between heros win rates, now letts look at some raw data:
 
-<img alt="raw pick and wins" src='graphs/ratio-chrono.png'>
+<img alt="raw pick and wins" src='graphs/picksNwins.png'>
 
 ## Model
 
